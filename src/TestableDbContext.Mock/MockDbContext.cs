@@ -1,7 +1,7 @@
 ﻿using Moq;
 using Microsoft.EntityFrameworkCore;
 
-namespace TestableDbContext;
+namespace TestableDbContext.Mock;
 
 public static class MockDbContext<TContext>
     where TContext : DbContext
