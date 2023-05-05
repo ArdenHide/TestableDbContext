@@ -23,6 +23,6 @@ public class InMemoryDbContextTests
         context.Users.Add(user);
         context.SaveChanges();
 
-        Assert.Equal(user, context.Users.Find(user));
+        Assert.Equal(user, context.Users.FirstOrDefault(x => x.Name == "Alex"));
     }
 }

@@ -4,7 +4,7 @@ using TestableDbContext.InMemory.Exceptions;
 namespace TestableDbContext.InMemory;
 
 public static class InMemoryDbContext<TContext>
-    where TContext : DbContext, ConfigurableDbContext
+    where TContext : DbContext
 {
     public static TContext CreateDbContext(string dbName)
     {
