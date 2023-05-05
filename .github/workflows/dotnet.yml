@@ -26,4 +26,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    
+    - name: Codecov
+      uses: codecov/codecov-action@v3.1.3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
